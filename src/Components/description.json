@@ -1,0 +1,62 @@
+[
+{
+    "id":1,
+    "temperature":16,
+    "humidity":30
+},
+{
+    "id":2,
+    "temperature":20,
+    "humidity":25
+},
+{
+    "id":3,
+    "temperature":24,
+    "humidity":24
+},
+{
+    "id":4,
+    "temperature":27,
+    "humidity":20
+},
+{
+    "id":5,
+    "temperature":18,
+    "humidity":45
+},
+{
+    "id":6,
+    "temperature":20,
+    "humidity":37
+},
+{
+    "id":7,
+    "temperature":25,
+    "humidity":33
+},
+{
+    "id":8,
+    "temperature":29,
+    "humidity":28
+},
+{
+    "id":9,
+    "temperature":21,
+    "humidity":56
+},
+{
+    "id":10,
+    "temperature":26,
+    "humidity":36
+},
+{
+    "id":11,
+    "temperature":29,
+    "humidity":37
+},
+{
+    "id":12,
+    "temperature":32,
+    "humidity":26
+}
+]

@@ -1,0 +1,19 @@
+.DisplayPhoto{
+ display: flex;
+ margin: auto;
+ width: 98%;
+}
+.image{
+    width: 600px;
+    height: 600px;
+   
+    background-size: 100% 100%;
+    border: 1px solid rgb(80, 78, 78);
+  
+}
+.image:hover {
+    background-color: transparent;
+    transition: 3s;
+    font-size: 200%;
+    text-align: center;
+}

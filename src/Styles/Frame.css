@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Bungee+Inline);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Sancreek);
+
+  * {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+
+.Frame{
+
+    
+    display: table;
+    margin: 0 auto;
+  
+    width: 98%;
+    height: auto;
+    background-color: rgb(211, 211, 211);
+  
+    
+    color: #000000fa;
+    text-transform: uppercase;
+    font-size:100% 100%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1;
+  
+    position: relative;
+    text-align:start;
+    font-family: "Press Start 2P", cursive;
+}
+.MainFrame{
+  margin-top: 3em;
+  margin-bottom: 3em;
+    height: auto;
+    text-align: center;
+    
+}
+@media screen and (max-width: 701px) {
+  div.MainFrame {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 701px) {
+    div.MainFrame {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    div.MainFrame {
+      font-size: 7px;
+    }
+  }
