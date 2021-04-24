@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee+Inline);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css2?family=Antonio:wght@300&d);
+.Inputs{
+    background-color: rgb(211, 211, 211);
+     margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 98%;
+    height: auto;
+}
+
+.error{
+    display: table;
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(190, 38, 38);
+    font-family: "Bungee Inline", cursive;
+    text-align: center;
+   
+
+}
+.SearchResult{
+    display: table;
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(98, 230, 98);
+    font-family: "Antonio", cursive;
+    text-align: center;
+    font-size: 1em;
+   
+  
+    
+}
+
+select {
+    position: relative;
+    border: 0;
+    margin: auto;
+    
+    border: solid 1px #2c3e50;
+    color: #2c3e50;
+    width: 40%;
+    letter-spacing: 2px;
+    
+    font-size: 20px;
+    box-shadow: 0 0 0 30px #2c3e50 inset;
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset;
+}
+
+.PossibleOptions{
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 98%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-color:#ffffff;
+    
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+    font-size:100% 100%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    position: relative;
+    text-align:center;
+    font-family: "Bungee Inline", cursive;
+}
+.NoDisplay{
+    display: none;
+}

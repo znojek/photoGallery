@@ -1,13 +1,28 @@
 import React, { useState } from "react";
-import Photo1 from '../Components/Photos/photo_1_1_2021_10_00.jpg';
-import Photo2 from '../Components/Photos/photo_1_2_2021_12_00.jpeg';
-import Photo3 from '../Components/Photos/photo_4_1_2021_8_00.jpeg';
-import Photo4 from '../Components/Photos/photo_11_1_2021_11_00.jpg';
+import Data from "./description.json";
+
+import Photo1 from '../Components/Photos/photo_1_1_2021_8_00.jpeg';
+import Photo2 from '../Components/Photos/photo_1_1_2021_10_00.jpg';
+import Photo3 from '../Components/Photos/photo_1_1_2021_12_00.jpeg';
+import Photo4 from '../Components/Photos/photo_1_1_2021_14_00.jpg';
+
+import Photo5 from '../Components/Photos/photo_2_1_2021_8_00.jpg';
+import Photo6 from '../Components/Photos/photo_2_1_2021_10_00.jpeg';
+import Photo7 from '../Components/Photos/photo_2_1_2021_12_00.jpg';
+import Photo8 from '../Components/Photos/photo_2_1_2021_14_00.jpg';
+
+import Photo9 from '../Components/Photos/photo_3_1_2021_8_00.jpg';
+import Photo10 from '../Components/Photos/photo_3_1_2021_10_00.jpg';
+import Photo11 from '../Components/Photos/photo_3_1_2021_12_00.jpeg';
+import Photo12 from '../Components/Photos/photo_3_1_2021_14_00.jpg';
+
+
 
 const SearchBars = () => {
     const[date, setDate] = useState(null);
     const[time, setTime] = useState(null);
     const[error, ErrorSet] = useState(null);
+    
 
    
 
@@ -22,7 +37,7 @@ const handleChangeDate = (e) => {
    
     else{
         setTime(null);
-        ErrorSet("type vaild Date (just numbers, no letters)");
+        ErrorSet("type vaild Date(and fill all inputs)");
     }
   };
 
@@ -33,28 +48,73 @@ const handleChangeDate = (e) => {
     if(selected ){
         setTime(selected);
         ErrorSet('');
+        
     }
+    
     else{
         setTime(null);
-        ErrorSet("type vaild Date (just numbers, no letters)");
+        ErrorSet("type vaild Date(and fill all inputs)");
     }
   };
+
 
   
 
 return(
     <form>
 
+<div className="Inputs">
 
-<input type="text" onChange={handleChangeDate} />
-<input type="text" onChange={handleChangeTime} />
+<select placeholder="Date here" onChange={handleChangeDate} >
+    <option className="NoDisplay">Select Date....</option>
+    <option value="01.01.2021">01.01.2021</option>
+    <option value="02.01.2021">02.01.2021</option>
+    <option value="03.01.2021">03.01.2021</option>
+  
+  </select>
+<select placeholder="Time here" onChange={handleChangeTime} >
+<option className="NoDisplay">Select Time....</option>
+    <option value="8:00">8:00</option>
+    <option value="10:00">10:00</option>
+    <option value="12:00">12:00</option>
+    <option value="14:00">14:00</option>
+  
+  </select>
+</div>
+<div className="PossibleOptions">
+    <p>Photos were made in 01.01.2021, 02.01.2021 and 03.01.2021 only at 8:00, 10:00, 12:00, 14:00.</p><br/>
+    <p>In each of those days we focus on different types of insects. Try it yourself!</p>
+</div>
 <div className="message">
+    
     {error && <div className="error">{error}</div>}
-    { date && time && <div><p>wyniki wyszukiwania: {date} {time}.  brak zjdecia? Popraw dane</p></div>}
-    { date ==='01.01.2021' && time==='10:00' && <div><img src={Photo1} alt="chuj"/></div>}
-    { date ==='01.02.2021' && time==='12:00' && <div><img src={Photo2} alt="chuj"/></div>}
-    { date ==='04.01.2021' && time==='8:00' && <div><img src={Photo3} alt="chuj"/></div>}
-    { date ==='11.01.2021' && time==='11:00' && <div><img src={Photo4} alt="chuj"/></div>}
+    { date && time && <div className="SearchResult"><p>Serach results for: {date}   {time}.</p></div>}
+    <div className="DisplayPhoto">
+
+    { date ==='01.01.2021' && time==='8:00' &&  <div><img className="image" src={Photo1} alt="aa"/></div>}
+    { date ==='01.01.2021' && time==='10:00' && <div><img className="image" src={Photo2} alt="aa"/></div>}
+    { date ==='01.01.2021' && time==='12:00' && <div><img className="image" src={Photo3} alt="aa"/></div>}
+    { date ==='01.01.2021' && time==='14:00' && <div><img className="image" src={Photo4} alt="aa"/></div>}
+
+    { date ==='02.01.2021' && time==='8:00' &&  <div><img className="image" src={Photo5} alt="aa"/></div>}
+    { date ==='02.01.2021' && time==='10:00' && <div><img className="image" src={Photo6} alt="aa"/></div>}
+    { date ==='02.01.2021' && time==='12:00' && <div><img className="image" src={Photo7} alt="aa"/></div>}
+    { date ==='02.01.2021' && time==='14:00' && <div><img className="image" src={Photo8} alt="aa"/></div>}
+
+    
+    { date ==='03.01.2021' && time==='8:00' &&  <div><img className="image" src={Photo9} alt="aa"/></div>}
+    { date ==='03.01.2021' && time==='10:00' && <div><img className="image" src={Photo10} alt="aa"/></div>}
+    { date ==='03.01.2021' && time==='12:00' && <div><img className="image" src={Photo11} alt="aa"/></div>}
+    { date ==='03.01.2021' && time==='14:00' && <div><img className="image" src={Photo12} alt="aa"/></div>}
+    { Data.map(post => {
+        return(
+            <div key={post.id} className="Post">
+               
+                { date ==='03.01.2021' && time==='8:00' && <p>{post.temperature}</p>}
+            </div>
+    )})}
+    </div>
+    
 </div>
 
 
