@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee+Inline);
+.DisplayPhoto{
+
+
+ margin: auto;
+ width: 98%;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ background-color: rgb(211, 211, 211);
+}
+.Container{
+    display: flex;
+    margin: auto;
+    width: 98%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+
+    
+    
+}
+.Description{
+
+    
+
+    width: 100%;
+    height: 500px;
+    order: 1;
+   
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1;
+    
+    text-align:center;
+    font-family: "Bungee Inline", cursive;
+}
+.image{
+    justify-content: flex-start;
+    width: 50%;
+    height: 540px;
+    
+ 
+
+  
+}

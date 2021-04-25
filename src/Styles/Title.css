@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Bungee+Inline);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Sancreek);
+
+  * {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+
+.Title{
+    background: url("../Styles/tlo3.png");
+    background-size: 100% 100%;
+    border-radius: 8px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 98%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-color:#b45959;
+    
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:100% 100%;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1;
+    position: relative;
+    text-align:start;
+    font-family: "Bungee Inline", cursive;
+}
+.MainTitle{
+
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 6em;
+    
+}
+@media screen and (max-width: 901px) {
+  div.MainTitle {
+    height: auto;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    margin-left: 2em;
+  }
+}
+
+@media screen and (min-width: 701px) {
+    div.MainTitle {
+      font-size: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    div.MainTitle {
+      font-size: 30px;
+    }
+  }
