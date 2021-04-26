@@ -66,7 +66,7 @@ If folder was chosen properly type to run app:
 7. From now App should run like butter. Enjoy :D
 
 
-### OPTION 1 : Use command git clone
+### OPTION 2 : Use command git clone
   
 1. Firstly we will need source-code editor. My proposition is to download Visual Studio Code (for shortcut: VSCode) from https://code.visualstudio.com/ 
 2. Go to website https://nodejs.org/en/ and download recommended version for your operating system.
