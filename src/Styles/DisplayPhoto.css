@@ -49,7 +49,7 @@
 }
 
 
-@media screen and (min-width: 701px) {
+@media screen and (max-width: 701px) {
     div.Description {
       font-size: 30px;
     }
