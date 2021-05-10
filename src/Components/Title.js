@@ -4,9 +4,10 @@ const Title = () => (
     <div >
         <div className="Title">
         <div className="MainTitle">
-            <span>Insect Photos &  </span><br/>
+        <br/><br/> <span>Welcome to PhotoApp! </span><br/><br/>
+            <span className='secondSentence'>what can we do with this app?</span><br/><br/>
        
-            <span>Description</span>
+            
             </div>
         </div>
       

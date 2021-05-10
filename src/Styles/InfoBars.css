@@ -1,33 +1,22 @@
-.Title{
-  
-    border-radius: 8px;
+.PossibleOptions{
     display: table;
     margin: 0 auto;
-    
+    margin-top: 10px;
     width: 98%;
     height: auto;
     background-repeat: no-repeat;
-
+    background-color:#ffffff;
     
     color: #000000;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     font-size:100% 100%;
-    font-weight: 0;
-    letter-spacing: 3px;
+    font-weight: 700;
+    letter-spacing: 2px;
     line-height: 1;
+    margin-bottom: 1em;
     position: relative;
-    text-align:start;
+    text-align:center;
     font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
 }
-.MainTitle{
-
-    text-align: center;
-    font-size: 3vw;
-    
-}
-.secondSentence{
-  font-size: 1.5vw;
-}
-
-
