@@ -30,8 +30,12 @@ shown to the user, and also description that will tell us :
 ```jsx
  npm install react-chartjs-2 chart.js --save
 ```
+5. Last library to download. We need it for slider to work properly. (*Make sure you are in e.g. my-app folder not src*). Open your console again (same keyboard combination) and type:
+```jsx
+ npm install react-slideshow-image -S
+```
 
-5. Final step. Go to your new src folder and start app. for that we can do it:
+6. Final step. Go to your new src folder and start app. for that we can do it:
 * **a) by finding file manually**: Open VSCode app. Now go to: File -> open folder -> search for our app folder and choose src folder. After that open console and you should see direct path to src folder. If folder was chosen properly type to run app:
 
 ```jsx
@@ -66,8 +70,16 @@ If folder was chosen properly type to run app:
 (which was mentioned before). Now all you need to do is to remove "src" folder from (e.g. my-app folder if you didnt change name for app) app and paste downloaded one. 
 (which was mentioned before). Now all you need to do is to remove all folders exept "node_modules" from (e.g. my-app folder if you didnt change name for app) app and paste downloaded one. 
 
-6. Final step. go to your new src folder and start app. for that we can do it:
-6. Final step. Go to your new src folder and start app. for that we can do it:
+
+6. We need to download 2 libraries. We need it for slider and chart to work properly. (*Make sure you are in e.g. my-app folder not src*). Open your console again (same keyboard combination) and type:
+```jsx
+ npm install react-slideshow-image -S
+```
+```jsx
+ npm install react-chartjs-2 chart.js --save
+```
+
+7. Final step. Go to your new src folder and start app. for that we can do it:
 * **a) by finding file manually**: Open VSCode app. Now go to: File -> open folder -> search for our app folder and choose src folder. After that open console and you should see direct path to src folder. If folder was chosen properly type to run app:
 
 ```jsx
