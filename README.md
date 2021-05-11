@@ -97,7 +97,4 @@ If folder was chosen properly type to run app:
 ```
 7. From now App should run like butter. Enjoy :D
  In case of any kind of problem go to [Getting Started](https://reactjs.org/docs/getting-started.html) react page for a solution.
-# Future of the app
-1. App is pretty simple, but the max i could do because of studies.
-2. Planning to rewrite code to properly cooperate with non-local DataBase.
-3. chart is hardcoded but planning to re-build it to cooperate with JSON file.
+
