@@ -1,3 +1,10 @@
+.Container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center; 
+}
 .DisplayPhoto{
   display: flex;
   flex-direction: row;
@@ -6,13 +13,7 @@
   align-content: center; 
 
 }
-.Container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center; 
-}
+
 .image{
   order: 1;
     width: 50vw;
@@ -22,7 +23,7 @@
 }
 .Description{
   order:1s;
-  width: 40%;
+  width: 30vw;
   text-align: center;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
